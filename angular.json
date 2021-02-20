@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "Wobb": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Wobb"
+    }
+  },
+  "defaultProject": "Wobb",
+  "cli": {
+    "analytics": "3c79109c-321d-4347-bedc-70a5f06f22d1"
+  }
 }

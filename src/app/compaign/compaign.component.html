@@ -1,0 +1,32 @@
+<div class="row text-center mt-4">
+    <div class="col-6"><h2>Companign Dashboard</h2></div>
+    <div class="col-6">
+         <a href="/compaign" class="btn btn-primary">Post Compaign</a> &nbsp;
+         
+    </div>
+</div>
+<div class="row mt-4">
+   <div class="col-1"></div>
+   <div class="col-10">
+    <table class="table stripped text-center">
+        
+        <thead>
+          <tr>
+             
+            <th scope="col">Campaign </th>
+            <th scope="col">Status</th>
+            <th scope="col">Applications</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let compaign of campaigns">
+            
+            <td>{{compaign.name}}</td>
+            <td>{{compaign.status}}</td>
+            <td><a [routerLink]="['/compaign']" style="text-decoration: none;">Edit Draft &nbsp;&nbsp;&nbsp;<i class="fas fa-ellipsis-v"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+   </div>
+   <div class="col-1"></div>
+</div>
